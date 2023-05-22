@@ -22,7 +22,8 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.ImageTransparency = 0.400
     ambientShadow.ScaleType = Enum.ScaleType.Slice
     ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
-    
+        ambientShadow.DisplayOrder = 9999
+
     Window.Name = "Window"
     Window.Parent = ambientShadow
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -30,7 +31,6 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.Position = UDim2.new(0, 5, 0, 5)
     Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
-    Window.DisplayOrder = 9999
     Outline_A.Name = "Outline_A"
     Outline_A.Parent = Window
     Outline_A.BackgroundColor3 = middledebug.OutlineColor
