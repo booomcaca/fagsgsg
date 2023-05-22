@@ -22,7 +22,6 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.ImageTransparency = 0.400
     ambientShadow.ScaleType = Enum.ScaleType.Slice
     ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
-        ambientShadow.DisplayOrder = 9999
 
     Window.Name = "Window"
     Window.Parent = ambientShadow
